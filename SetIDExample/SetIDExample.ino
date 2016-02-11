@@ -21,7 +21,7 @@
 #define DXL_BUS_SERIAL2 2  //Dynamixel on Serial2(USART2)  <-LN101,BT210
 #define DXL_BUS_SERIAL3 3  //Dynamixel on Serial3(USART3)  <-OpenCM 485EXP
 /* Dynamixel ID defines */
-#define NEW_ID 3
+#define NEW_ID 1
  
 Dynamixel Dxl(DXL_BUS_SERIAL1); 
  
@@ -35,9 +35,12 @@ void setup() {
  ************************************************/
   Dxl.setID(BROADCAST_ID, NEW_ID);  //Dynamixel_Id_Change 1 to 2
   Dxl.jointMode(NEW_ID); //jointMode() is to use position mode  
+  pinMode(BOARD_LED_PIN, OUTPUT);
+  digitalWrite(BOARD_LED_PIN, HIGH); // set to as HIGH LED is turn-off
 }
  
 void loop() {
   // Wait for 1 second (1000 milliseconds)
-  delay(1000);              
+  delay(1000);
+  digitalWrite(BOARD_LED_PIN, LOW);  // set to as LOW LED is turn-on  
 }
