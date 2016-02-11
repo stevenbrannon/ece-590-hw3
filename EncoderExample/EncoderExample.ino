@@ -1,4 +1,4 @@
-/* Dynamixel ID Change Example
+/* Dynamixel Encoder Examples
  */
  /* Serial device defines for dxl bus */
 #define DXL_BUS_SERIAL1 1  //Dynamixel on Serial1(USART1)  <-OpenCM9.04

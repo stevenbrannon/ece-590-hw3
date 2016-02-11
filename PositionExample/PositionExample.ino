@@ -1,4 +1,4 @@
-/* Dynamixel ID Change Example
+/* Dynamixel Set Position Example
  
 Turns the dynamixel left , then turn right for one 
  second, repeatedly.
