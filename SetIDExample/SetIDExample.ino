@@ -21,7 +21,7 @@
 #define DXL_BUS_SERIAL2 2  //Dynamixel on Serial2(USART2)  <-LN101,BT210
 #define DXL_BUS_SERIAL3 3  //Dynamixel on Serial3(USART3)  <-OpenCM 485EXP
 /* Dynamixel ID defines */
-#define NEW_ID 2
+#define NEW_ID 3
  
 Dynamixel Dxl(DXL_BUS_SERIAL1); 
  
